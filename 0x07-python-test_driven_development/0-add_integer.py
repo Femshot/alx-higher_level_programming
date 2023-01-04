@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+"""Integers addition"""
 
 
 def add_integer(a, b=98):
