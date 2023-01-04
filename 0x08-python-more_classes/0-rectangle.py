@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-
+"""Simple rectangle"""
 
 class Rectangle:
-    """Empty class Rectangle that defines rectangle figure Attributes:empty"""
+    """
+    Empty class Rectangle that defines a rectangle figure
+
+    Attributes:
+        empty
+    """
     pass
