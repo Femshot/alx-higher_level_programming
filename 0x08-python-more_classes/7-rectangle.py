@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+"""Change representation"""
 
 
 class Rectangle:

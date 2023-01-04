@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+"""Real definition of a rectangle"""
 
 
 class Rectangle:

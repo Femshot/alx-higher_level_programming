@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+"""Eval is magic"""
 
 
 class Rectangle:

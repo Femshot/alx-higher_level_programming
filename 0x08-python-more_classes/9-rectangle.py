@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+"""A square is a rectangle"""
 
 
 class Rectangle:
