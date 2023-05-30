@@ -3,5 +3,10 @@
 
 
 class Square:
-    """Does Nothing Only defines a square"""
+    """Does Nothing Only defines a square
+
+
+    Attributes:
+        empty
+    """
     pass
