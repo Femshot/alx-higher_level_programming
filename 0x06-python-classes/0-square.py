@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Does Nothing Only defines a square
+    """Empty class Square that defines a square.
 
     Attributes:
         empty
