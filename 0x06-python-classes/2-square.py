@@ -19,11 +19,9 @@ class Square:
             TypeError: If typeerror is encountered for size
             ValueError: If size is less than 0
         """
-        try:
-            size = size + 0
-        except TypeError:
-            raise TypeError("size must be an integar")
-        if size < 0:
-            raise ValueError("Size must be >= 0")
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         else:
             self.__size = size
