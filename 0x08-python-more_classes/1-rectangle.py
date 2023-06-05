@@ -12,8 +12,8 @@ class Rectangle:
                 width (int): The rectangle width
                 height (int): The rectangle height
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -52,7 +52,7 @@ class Rectangle:
         """Set properties of height attributes
 
         Args:
-            value (int): Width of rectangle to set
+            value (int): Height of rectangle to set
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
