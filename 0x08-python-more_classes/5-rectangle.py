@@ -102,7 +102,8 @@ class Rectangle:
 
         it should be able to recreate a new instance by using eval()
         """
-        rec = "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ")"
+        rec = ("Rectangle(" + str(self.__width) + ', ' + str(self.__height)
+               + ")")
         return rec
 
     def __del__(self):
