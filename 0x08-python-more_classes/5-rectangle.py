@@ -104,3 +104,7 @@ class Rectangle:
         """
         rec = "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ")"
         return rec
+
+    def __del__(self):
+        """Instanc of deleting object created"""
+        print("Bye rectangle...")

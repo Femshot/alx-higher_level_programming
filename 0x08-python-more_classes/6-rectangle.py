@@ -3,7 +3,12 @@
 
 
 class Rectangle:
-    """A class that defines a Rectangle"""
+    """A class that defines a Rectangle
+
+    Attributes:
+        number_of_instances: Counter to number of class available
+    """
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Instantiation of a class Rectangle
@@ -14,6 +19,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -104,3 +110,8 @@ class Rectangle:
         """
         rec = "Rectangle(" + str(self.__width) + ', ' + str(self.__height) + ")"
         return rec
+
+    def __del__(self):
+        """Instanc of deleting object created"""
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
