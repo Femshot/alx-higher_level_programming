@@ -31,6 +31,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """A derivd class of BaseGeometry class"""
 
@@ -53,6 +54,7 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """Determines str() output for Rectangle class object"""
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
+
 
 class Square(Rectangle):
     """A derived class of Rectangle class"""

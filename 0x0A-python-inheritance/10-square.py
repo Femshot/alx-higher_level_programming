@@ -31,6 +31,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """A derivd class of BaseGeometry class"""
 
@@ -54,6 +55,7 @@ class Rectangle(BaseGeometry):
         """Determines str() output for rectangle class object"""
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
+
 class Square(Rectangle):
     """A derived class of Rectangle class"""
 
@@ -63,9 +65,9 @@ class Square(Rectangle):
             Args:
                 size (int): First argument passed
         """
-        super().__init__(width=size, height=size)
         BaseGeometry.integer_validator(self, "size", size)
         self.__size = size
+        super().__init__(width=size, height=size)
 
     def area(self):
         """Computes area of the Square class object"""
