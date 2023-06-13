@@ -12,7 +12,7 @@ class Square(Rectangle):
             Args:
                 size (int): First argument passed
         """
-        BaseGeometry.integer_validator(self, "size", size)
+        super().integer_validator("size", size)
         self.__size = size
         super().__init__(width=size, height=size)
 
