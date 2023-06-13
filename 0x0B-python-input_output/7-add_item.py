@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module adds all arguments to a Python list and save them to a file."""
+"""Module adds arguments passed to a Python list and save them to json file."""
 import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
@@ -8,7 +8,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 if __name__ == "__main__":
     try:
         items = load_from_json_file("add_item.json")
-    except:
+    except Exception as e:
         items = []
 
     items.extend(sys.argv[1:])
