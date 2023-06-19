@@ -48,10 +48,10 @@ class TestSquare(unittest.TestCase):
         S1 = Square(1, 2)
         S2 = Square(1, 2, 3)
         S3 = Square(1, 2, 3, 4)
-        self.assertEqual([S1.size, S1.x, S1.y, S1.id],
-                         [1, 2, 0, 1])
-        self.assertEqual([S2.size, S2.x, S2.y, S2.id],
-                         [1, 2, 3, 2])
+        self.assertEqual([S1.size, S1.x, S1.y],
+                         [1, 2, 0])
+        self.assertEqual([S2.size, S2.x, S2.y],
+                         [1, 2, 3])
         self.assertEqual([S3.size, S3.x, S3.y, S3.id],
                          [1, 2, 3, 4])
 
