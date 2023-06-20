@@ -42,14 +42,15 @@ class Base:
         with open(file, 'w') as f:
             if list_objs is None or list_objs == []:
                 f.write("[]")
-            for obj in list_objs:
-                new.append(obj.to_dictionary())
-            f.write(cls.to_json_string(new))
+            else:
+                for obj in list_objs:
+                    new.append(obj.to_dictionary())
+                f.write(cls.to_json_string(new))
 
     @staticmethod
     def from_json_string(json_string):
         """Returns the list of the JSON string representation json_string."""
         if json_string is None or json_string == []:
-            return ("[]")
+            return ([])
         else:
             return (json.loads(json_string))
