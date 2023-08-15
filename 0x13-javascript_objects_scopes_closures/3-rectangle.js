@@ -12,4 +12,4 @@ module.exports = class Rectangle {
       console.log(c.repeat(this.width));
     }
   }
-}
+};
