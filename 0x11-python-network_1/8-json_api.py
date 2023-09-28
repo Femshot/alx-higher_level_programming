@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Searches and API and sends a Post"""
+""" Searches and API and sends a Post """
 import requests
 from sys import argv
 

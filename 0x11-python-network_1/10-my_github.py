@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Takes GitHub credentials (username and password) """
+""" and uses the GitHub API to display the id"""
 import requests as rq
 from sys import argv
 
