@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 from models.square import Square
-from models.rectangle import Rectangle
-from models.base import Base
 
 if __name__ == "__main__":
 
