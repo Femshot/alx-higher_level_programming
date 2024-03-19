@@ -1,5 +1,6 @@
 #!/bin/usr/python3
 """ Execute a function safely """
+import sys
 
 
 def safe_function(fct, *args):
