@@ -29,7 +29,7 @@ class Square:
             TypeError: If type of size is not an integer
             ValueError: If size is less than 0
         """
-        if type(value) is not int or float:
+        if type(value) not in (int, float):
             raise TypeError("size must be an number")
         elif value < 0:
             raise ValueError("size must be >= 0")
