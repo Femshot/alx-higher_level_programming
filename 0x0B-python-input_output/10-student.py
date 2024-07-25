@@ -19,11 +19,11 @@ class Student:
             present in instance
 
         """
-        if attrs and type(attrs) == list:
+        if type(attrs) == list:
             new_dict = {}
             for item in attrs:
-                if type(item) == str and (value := self.__dict__.get(item,
-                    None)):
+                value = self.__dict__.get(item, None)
+                if value:
                     new_dict[item] = value
             return new_dict
         else:
