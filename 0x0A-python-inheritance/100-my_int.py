@@ -12,7 +12,7 @@ class MyInt(int):
         Attributes:
             num (int): an inputed integer
         """
-        return (int(self) != num)
+        return super().__ne__(num)
 
     def __ne__(self, num):
         """
@@ -21,4 +21,4 @@ class MyInt(int):
         Attributes:
             num (int): an inputed integer
         """
-        return (int(self) == num)
+        return super().__eq__(num)
